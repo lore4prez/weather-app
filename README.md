@@ -1,7 +1,11 @@
 # project-template
 A template you can use when creating a new repository to immediately get started with your project! All that you need is to follow the quick setup below.
 
-## For a quick setup:
+## For a quick setup (You used this as a template):
+1. npm init -y
+2. npm install -D webpack webpack-cli html-webpack-plugin style-loader css-loader html-loader webpack-dev-server
+
+## If you did not use this as a template:
 1. npm init -y
 2. npm install --save-dev webpack webpack-cli
 3. npm install --save-dev html-webpack-plugin
@@ -15,8 +19,9 @@ A template you can use when creating a new repository to immediately get started
 11. *optional* npm install -D babel-loader @babel/core @babel/preset-env webpack
 
 ## To host, 
-1. npx webpack serve
-2. npm run dev
+npx webpack serve
+    or
+npm run dev
 
 ## Open it on 
 http://localhost:8080/
