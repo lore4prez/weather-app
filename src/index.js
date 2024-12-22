@@ -1,3 +1,4 @@
-import {container, makeDOM} from "./dom.js";
+import "./styles.css"
+import {container, body, makeDOM} from "./dom.js";
 
 makeDOM();

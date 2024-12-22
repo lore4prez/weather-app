@@ -1,0 +1,155 @@
+:root {
+    --bg-color: #21233B;
+    --card-color: #13152B;
+    --border-color: #A5A9D6;
+
+    --heading: 900;
+    --subheading: 700;
+    --normal-text: 500;
+}
+
+body {
+    display: block;
+    background-color: var(--bg-color);
+    height: 100vh;
+    width: auto;
+    align-content: center;
+    color: white;
+    /* font-weight:var(--heading); */
+}
+
+#container {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.options-overhead {
+    height: 12%;
+    width: 90%;
+    background-color: var(--card-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.degree-btn, .change-location{
+    height: 50%;
+    width: 25%;
+    padding: 0;
+    margin: 0px 100px 0 100px;
+    border: 1.5px solid var(--border-color);
+    text-align: center;
+    font-size: x-large;
+    background-color: var(--card-color);
+    color: white;
+    font-weight: var(--subheading);
+    /* border-radius: 1rem; */
+}
+
+.today-content {
+    height: 30%;
+    width: 90%;
+    background-color: var(--bg-color);
+    border-bottom: 20px solid var(--border-color);
+    display: flex;
+    justify-content: space-between;
+    /* margin: 0px 100px 0 100px; */
+}
+
+.today-info {
+    width: 25%;
+    height: auto;
+    margin-left: 100px;
+    margin-right: 100px;
+    /* background-color: aquamarine; */
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    justify-content: center;
+}
+
+.today-info-top {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 40%;
+    display: flex;
+    background-color: var(--card-color);
+    align-items: center;
+}
+
+.today-temp {
+    margin-left: 40px;
+    font-size: xx-large;
+}
+
+.sunny-img {
+    width: 80px;
+    height: 80px;
+    margin-right: 40px;
+}
+
+.today-info-bot {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 20px;
+}
+
+.today-weather-type {
+    width: 50%;
+    text-align: center;
+    align-content: center;
+    background-color: var(--card-color);
+    font-size:large;
+}
+
+.today-date {
+    width: 50%;
+    text-align: center;
+    align-content: center;
+    background-color: var(--card-color);
+    font-size:large;
+}
+
+.current-location {
+    margin-bottom: 55px;
+    margin-top: 55px;
+    margin-left: 100px;
+    margin-right: 100px;
+    text-align: center;
+    align-content: center;
+    width: 25%;
+    height: 15%;
+    background-color: var(--card-color);
+    font-size: larger;
+}
+
+.week-content {
+    height: 60%;
+    width: 90%;
+    background-color: var(--bg-color);
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    column-gap: 10px;
+}
+
+.dayCard {
+    height: 80%;
+    width: 15%;
+    background-color: var(--card-color);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    font-size: x-large;
+}
