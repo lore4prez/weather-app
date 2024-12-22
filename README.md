@@ -1,5 +1,5 @@
 # weather-app
-This is a personal project. My goal is to learn how to integrate the use of API into my projects and to practice how to design the UI using Figma. I do not own the weather icons images, credits goes to Tiru19 from reddit.
+This is a personal project. My goal is to learn how to integrate the use of API into my projects and to practice how to design the UI using Figma. I do not own the weather icons images, credits goes to Tiru19 from reddit. I am using Visual Crossing API in this project.
 
 ## Wireframe
 ![wireframe](src/images/readme-images/wireframe.png)
