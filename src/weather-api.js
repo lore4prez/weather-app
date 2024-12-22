@@ -31,8 +31,8 @@ async function getLocStats(unit, loc) {
 }
 // clear-day, partly-cloudy-day, snow, rain, cloudy
 
-async function updateUI() {
-    const daysArr = await getLocStats("us", "Massachussetts");
+async function changeInfo(unit, loc) {
+    const daysArr = await getLocStats(unit, loc);
     console.log(daysArr);
 
     let imgMap = new Map();
@@ -73,5 +73,21 @@ async function updateUI() {
         weekImgArr[i].src = imgMap.get(daysArr[i+1][1]);
     }
 }
+
+function updateUI() {
+    const btn = document.querySelector(".degree-btn");
+    const currLoc = document.querySelector(".current-location");
+
+    let unit; 
+    let loc = currLoc.textContent;
+
+    if (btn.textContent === "Fahrenheit")
+        unit = "us";
+    else 
+        unit = "metric";
+    
+    changeInfo(unit, loc);
+}
+
 
 export {updateUI};

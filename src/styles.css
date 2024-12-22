@@ -48,7 +48,17 @@ body {
     background-color: var(--card-color);
     color: white;
     font-weight: var(--subheading);
+    transition: background-color 0.3s;
     /* border-radius: 1rem; */
+}
+
+.degree-btn {
+    cursor: pointer;
+}
+
+.degree-btn:hover {
+    background-color: var(--border-color);
+    color: var(--card-color)
 }
 
 .today-content {
@@ -152,11 +162,12 @@ body {
     align-items: center;
     gap: 60px;
     font-size: x-large;
+    box-shadow: 0px 5px 0px rgba(171, 159, 159, 0.1);
 }
 
-.dayCard > h3 {
-    /* margin-top: 50px; */
-}
+/* .dayCard > h3 {
+    margin-top: 50px;
+} */
 
 .dayCard > p {
     margin-bottom: 100px;
