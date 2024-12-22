@@ -1,11 +1,20 @@
-# project-template
-A template you can use when creating a new repository to immediately get started with your project! All that you need is to follow the quick setup below.
+# weather-app
+This is a personal project. My goal is to learn how to integrate the use of API into my projects and to practice how to design the UI using Figma. I do not own the weather icons images, credits goes to Tiru19 from reddit.
 
-## For a quick setup (You used this as a template):
+## Wireframe
+![wireframe](src/images/readme-images/wireframe.png)
+
+## Color Scheme
+![color scheme](src/images/readme-images/color-scheme.png)
+
+## Mockup
+![mockup](src/images/readme-images/mockup.png)
+
+## For a quick setup (You cloned this repo):
 1. npm init -y
 2. npm install -D webpack webpack-cli html-webpack-plugin style-loader css-loader html-loader webpack-dev-server
 
-## If you did not use this as a template:
+## If you want to use this template but you did not clone it:
 1. npm init -y
 2. npm install --save-dev webpack webpack-cli
 3. npm install --save-dev html-webpack-plugin
@@ -34,15 +43,6 @@ http://localhost:8080/
     "dev": "webpack serve",
     "deploy": "git subtree push --prefix dist origin gh-pages"
 },
-
-## To deploy on GitHub Pages:
-1. make a new branch to deploy from (git branch gh-pages)
-2. commit any remaining work and push
-3. git checkout gh-pages && git merge main --no-edit
-4. npx webpack or npm run build
-5. git add dist -f && git commit -m "deployment commit"
-6. git subtree push --prefix dist origin gh-pages
-7. git checkout main
 
 ## Your webpack.config.js should already contain: 
 
@@ -96,3 +96,12 @@ module.exports = {
     ],
   },
 };
+
+## To deploy on GitHub Pages:
+1. make a new branch to deploy from (git branch gh-pages)
+2. commit any remaining work and push
+3. git checkout gh-pages && git merge main --no-edit
+4. npx webpack or npm run build
+5. git add dist -f && git commit -m "deployment commit"
+6. git subtree push --prefix dist origin gh-pages
+7. git checkout main
