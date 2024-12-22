@@ -84,14 +84,14 @@ body {
 }
 
 .today-temp {
-    margin-left: 40px;
+    margin-left: 20px;
     font-size: xx-large;
 }
 
-.sunny-img {
+.today-img {
     width: 80px;
     height: 80px;
-    margin-right: 40px;
+    margin-right: 20px;
 }
 
 .today-info-bot {
@@ -150,6 +150,19 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 100px;
+    gap: 60px;
     font-size: x-large;
+}
+
+.dayCard > h3 {
+    /* margin-top: 50px; */
+}
+
+.dayCard > p {
+    margin-bottom: 100px;
+}
+
+.dayCard > img {
+    width: 80px;
+    height: 80px;
 }

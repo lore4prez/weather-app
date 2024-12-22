@@ -1,7 +1,5 @@
 import sunny from "./images/weather-icons/sunny.png";
 
-
-
 const body = document.querySelector("body");
 const container = document.createElement("div");
 container.setAttribute("id", "container");
@@ -16,6 +14,8 @@ function makeOptions() {
     locInput.classList.add("change-location");
 
     degBtn.textContent = "Fahrenheit";
+    locInput.setAttribute("type", "text");
+    locInput.setAttribute("id", "search-loc");
     locInput.setAttribute("placeholder", "location");
 
     mainBox.appendChild(degBtn);
@@ -39,7 +39,7 @@ function makeTodayContent() {
     todayInfoTop.classList.add("today-info-top");
     todayInfoBot.classList.add("today-info-bot");
     currLoc.classList.add("current-location");
-    todayWeatherImg.classList.add("sunny-img");
+    todayWeatherImg.classList.add("today-img");
     todayTemp.classList.add("today-temp");
     todayWeatherType.classList.add("today-weather-type");
     todayDate.classList.add("today-date");
@@ -75,7 +75,7 @@ function makeWeekContent() {
 
         dayDiv.classList.add("dayCard");
         day.textContent = daysOfWeek[i];
-        // weatherType.src = sunny;
+        weatherType.src = sunny;
         weatherType.alt = "Weather";
         deg.textContent = "73°";
 
