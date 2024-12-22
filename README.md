@@ -10,6 +10,9 @@ This is a personal project. My goal is to learn how to integrate the use of API 
 ## Mockup
 ![mockup](src/images/readme-images/mockup.png)
 
+## Final Look
+![final result](src/images/readme-images/final-result.png)
+
 ## For a quick setup (You cloned this repo):
 1. npm init -y
 2. npm install -D webpack webpack-cli html-webpack-plugin style-loader css-loader html-loader webpack-dev-server
